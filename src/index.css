@@ -1170,7 +1170,7 @@ body{
   font-family: "Roboto", sans-serif;
   font-size: 11px;
   opacity: 0.8;
-  line-height: 13px;
+  line-height: 12px;
 }
 
 .service .content .service-right .bg-elemen img{
@@ -1179,5 +1179,4 @@ body{
   right: 30px;
   margin-top: 40px;
 }
-
 }

@@ -258,7 +258,7 @@ body{
 .home .content .content-bottom .content-card .card.third{
   width: 33%;
   border: none;
-  background-image: url('../src/assets/image/bg/Group\ 9\ \(3\).svg');
+  background-image: url('../src/assets/image/bg/Group93.svg');
   background-repeat: no-repeat;
   padding: 20px;
   position: relative;
@@ -353,7 +353,7 @@ body{
   position: absolute;
   width: 70px;
   height: 70px;
-  background-image: url('../src/assets/image/elemen/Arrow2.png');
+  background-image: url('../src/assets/image/elemen/Arrow_02.png');
   background-repeat: no-repeat;
   background-size: contain;
   right: -80px;
@@ -648,13 +648,8 @@ body{
   }
 
   .service .content .text-left button::after{
-    content: "";
-    position: absolute;
     width: 60px;
     height: 60px;
-    background-image: url('../src/assets/image/elemen/Arrow_02.png');
-    background-repeat: no-repeat;
-    background-size: contain;
     right: -75px;
     top: 25px;
   }
@@ -776,7 +771,7 @@ body{
   .slider-for {
     width: 100%;
     margin: 0 auto;
-    position: relative; /* Ensure that slider container is relative for absolute positioning */
+    position: relative; 
   }
   
   .slider-nav {

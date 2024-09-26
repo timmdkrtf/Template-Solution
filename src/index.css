@@ -1173,5 +1173,11 @@ body{
   line-height: 13px;
 }
 
+.service .content .service-right .bg-elemen img{
+  width: 90%;
+  height: 350px;
+  right: 30px;
+  margin-top: 40px;
+}
 
 }

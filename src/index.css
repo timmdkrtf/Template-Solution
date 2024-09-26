@@ -1,0 +1,1177 @@
+body{
+  overflow-x: hidden;
+}
+
+.navbar{
+  padding: 20px 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+}
+
+.navbar .navbar-brand{
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.navbar .ms-auto{
+  gap: 10px 20px;
+  font-weight: 500;
+}
+
+.navbar .ms-auto .nav-link {
+  padding: 5px 10px;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  cursor: pointer;
+  position: relative;
+  color: #000000;
+  display: inline-block;
+  width: fit-content;
+}
+
+.navbar .ms-auto .nav-link:hover,
+.navbar .ms-auto .nav-link:active,
+.navbar .ms-auto .nav-link:focus {
+  font-weight: 500;
+}
+
+.nav-link:focus:after,
+.nav-link:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.nav-link:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #3335CB;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+/* home */
+.home .container{
+  margin-top: 86px;
+}
+
+.home .container .content{
+  padding: 20px 0 30px 0;
+}
+
+.home .container .content .main-text{
+  background-color: #F8F8F8;
+  border-radius: 35px;
+  padding: 60px;
+  height: 600px;
+  text-align: center;
+}
+
+.home .container .content .main-text h1{
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight:700;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000000;
+  display: inline-block;
+  position: relative;
+  overflow: visible;
+}
+
+.home .container .content .main-text h1::before{
+  content: "";
+  position: absolute;
+  background-image: url('../src/assets/image/elemen/checklist-blue.png');
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  bottom: -10px;
+  transform: rotate(10deg);
+  left: -90px;
+  background-size: contain;
+  opacity: 0.5;
+}
+
+.home .container .content .main-text h1::after{
+  content: "";
+  position: absolute;
+  background-image: url('../src/assets/image/elemen/lamp.png');
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  transform: rotate(30deg);
+  right: -30px;
+  background-size: contain;
+}
+
+.home .container .content .main-text h1 span{
+  color: #3335CB;
+  display: inline-block;
+  position: relative;
+  overflow: visible;
+}
+
+.home .container .content .main-text h1 span::after{
+  content: "";
+  position: absolute;
+  background-image: url('../src/assets/image/elemen/line-wave.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 20px;
+  background-size: contain;
+  left: 0;
+  bottom: -12px;
+}
+
+.home .container .content .main-text p{
+  width: 80%;
+  margin: 35px auto;
+  font-family: "Roboto", sans-serif;
+  opacity: 0.9;
+  line-height: 25px;
+}
+.home .container .content .main-text button {
+  border: none;
+  background-color: #E6E51E;
+  padding: 13px 28px;
+  border-radius: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  overflow: visible; 
+  transition: 0.3s;
+}
+
+.home .container .content .main-text button:hover {
+  background-color: #ffffff;
+  color: #3335CB;
+  border: 1px solid #E6E51E;
+}
+
+.home .container .content .main-text button::after {
+  content: "";
+  position: absolute;
+  background-image: url('../src/assets/image/elemen/lines.png');
+  right: -25px;
+  top: -15px;
+  width: 25px;
+  height: 25px;
+  z-index: 10 !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.home .container .content .main-text button::before {
+  content: "";
+  position: absolute;
+  background-image: url('../src/assets/image/elemen/stars.png');
+  left: -40px;
+  bottom: -25px;
+  width: 50px;
+  height: 50px;
+  z-index: 10 !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.home .content .content-bottom .content-card{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: -120px 0 0 0;
+  position: relative;
+}
+
+.home .content .content-bottom .content-card .card.first{
+  width: 24%;
+  background-color: #E6E51E;
+  border: none;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.home .card.first img{
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.home .card.first h4{
+  font-family: "Montserrat", sans-serif;
+  margin: 20px 0 5px 0;
+  font-weight: 600;
+  color: #000000;
+}
+
+.home .card.first p{
+  font-family: "Roboto", sans-serif;
+  line-height: 20px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.home .content .content-bottom .content-card .card.second{
+  width: 24%;
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.home .card.second img{
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.home .card.second h4{
+  font-family: "Montserrat", sans-serif;
+  margin: 20px 0 5px 0;
+  font-weight: 600;
+}
+
+.home .card.second p{
+  font-family: "Roboto", sans-serif;
+  line-height: 20px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.home .content .content-bottom .content-card .card.third{
+  width: 33%;
+  border: none;
+  background-image: url('../src/assets/image/bg/Group\ 9\ \(3\).svg');
+  background-repeat: no-repeat;
+  padding: 20px;
+  position: relative;
+}
+
+.home .card.third h4{
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 15px 0 10px 0;
+}
+
+.home .card.third p{
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.home .card.third img{
+  width: 110px;
+  margin-left: 20px;
+}
+
+.service{
+  padding: 100px 0;
+}
+
+.service .content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.service .content .text-left{
+  width: 47%;
+  display: inline-block;
+  position: relative;
+}
+
+.service .content .text-left::before{
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 200px;
+  background-image: url('../src/assets/image/elemen/brush2.png');
+  background-repeat: no-repeat;
+  z-index: -1;
+  left: -30px;
+  margin: -20px 0 0 0;
+}
+
+.service .content .text-left p{
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  opacity: 0.9;
+  color: #000000;
+}
+
+.service .content .text-left h1{
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.service .content .text-left button{
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 25px;
+  margin: 50px 0 0 0;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.service .content .text-left button:hover{
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #3335CB;
+  box-shadow: 0 2px 0 #303030;
+}
+
+.service .content .text-left button::after{
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-image: url('../src/assets/image/elemen/Arrow2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: -80px;
+  top: 30px;
+}
+
+.service .content .service-right{
+  width: 47%;
+}
+
+.service .content .service-right .bg-elemen img{
+  width: 47%;
+  height: 400px;
+  z-index: -1;
+  position: absolute;
+  right: 90px;
+  margin-top: 50px;
+}
+
+.service .content .service-right .service-card{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.service .content .service-right .service-card .card{
+  width: calc(50% - 8px);
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 2px 2px 4px #c4c4c4;
+}
+
+.service .content .service-right .service-card .card img{
+  width: 50px;
+  background-color: #F2F5FF;
+  padding: 11px;
+  border-radius: 10px;
+}
+
+.service .content .service-right .service-card .card h5{
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 25px 0 10px 0;
+}
+
+.service .content .service-right .service-card .card p{
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  opacity: 0.8;
+  line-height: 16px;
+}
+
+
+.slider-for {
+  width: 65%;
+  margin: 0 auto;
+  position: relative; /* Ensure that slider container is relative for absolute positioning */
+}
+
+.slider-nav {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.slider-for .text-white.position-absolute {
+  margin: -60px 0 0 30px;
+}
+
+.slider-for .d-flex.gap-4 {
+  margin: 40px 0 0 0;
+}
+
+.slick-prev, .slick-next {
+  z-index: 10; /* Ensure navigation buttons are above the content */
+}
+
+.slick-prev, .slick-rtl .slick-prev {
+  color: rgb(255, 255, 255) !important;
+  background-color: #a1a1a1;
+  width: 30px !important;
+  height: 37px !important;
+  border-radius: 5px;
+  left: 5px !important;
+  opacity: 0.9 !important;
+  position: absolute; /* Ensure they are positioned absolutely */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical center */
+}
+
+.slick-next, .slick-rtl .slick-next {
+  color: rgb(255, 255, 255) !important;
+  background-color: #a1a1a1;
+  width: 30px !important;
+  height: 37px !important;
+  border-radius: 5px;
+  right: 20px !important;
+  opacity: 0.9 !important;
+  position: absolute; /* Ensure they are positioned absolutely */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical center */
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 20px !important;
+  font-weight: 800;
+}
+
+#portfolio .col-12 h2{
+  font-family: "Montserrat", sans-serif;
+}
+
+#portfolio .col-12 p{
+  font-family: "Roboto", sans-serif;
+}
+
+#portfolio .col-12 .btn-dark{
+  box-shadow: 3px 3px 0 #3335CB;
+  color: #E6E51E;
+  font-family: "Roboto", sans-serif;
+}
+
+#portfolio .col-12 .btn-dark:hover{
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0px 4px 0 #3335CB;
+}
+
+@media screen and (max-width: 1200px) {
+  .home .container .content .main-text h1::after{
+    top: 10px;
+    right: -40px;
+  }
+
+  .home .content .content-bottom .content-card .card.third{
+    width: 37%;
+    height: 280px;
+    background-size: contain;
+  }
+
+  .home .card.first img{
+    width: 100%;
+    height: 130px;
+  }
+
+  .home .card.second img{
+    width: 100%;
+    height: 130px;
+  }
+
+  .service .content .service-right .bg-elemen img{
+    width: 42%;
+    height: 350px;
+    z-index: -1;
+    position: absolute;
+    right: 90px;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .navbar{
+    padding: 15px 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .navbar .navbar-brand{
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .home .container .content{
+    padding: 10px 0 30px 0;
+  }
+
+  .home .container .content .main-text{
+    height: 550px;
+  }
+
+  .home .container .content .main-text h1{
+    width: 90%;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .home .container .content .main-text h1::after{
+    top: 5px;
+    right: -50px;
+  }
+
+  .home .container .content .main-text h1::before{
+    bottom: -10px;
+    left: -70px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .home .container .content .main-text p{
+    font-size: 15px;
+    width: 85%;
+    line-height: 22px;
+  }
+
+  .home .container .content .main-text button {
+    padding: 12px 25px;
+    font-size: 17px;
+  }
+
+  .home .content .content-bottom .content-card{
+    gap: 15px;
+    margin: -90px 0 0 0;
+  }
+
+  .home .content .content-bottom .content-card .card.first{
+    padding: 10px;
+    border-radius: 20px;
+    width: 25%;
+  }
+
+  .home .card.first img{
+    height: 100px;
+    border-radius: 15px;
+  }
+
+  .home .card.first h4{
+    font-size: 20px;
+  }
+
+  .home .card.first p{
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .home .content .content-bottom .content-card .card.second{
+    padding: 10px;
+    border-radius: 20px;
+    width: 25%;
+  }
+
+  .home .card.second img{
+    height: 100px;
+    border-radius: 15px;
+  }
+
+  .home .card.second h4{
+    font-size: 20px;
+  }
+
+  .home .card.second p{
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .home .content .content-bottom .content-card .card.third{
+    padding: 15px;
+    width: 40%;
+    height: 225px;
+  }
+
+  .home .card.third h4{
+    font-size: 24px;
+  }
+
+  .home .card.third p{
+    font-size: 13px;
+  }
+
+  .home .card.third img{
+    width: 70px;
+    margin-left: 20px;
+    margin-top: -15px;
+  }
+
+  .service .content{
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .service .content .text-left{
+    width: 70%;
+  }
+
+  .service .content .text-left::before{
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    margin: -20px auto 0 auto;
+  }
+
+  .service .content .text-left button::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url('../src/assets/image/elemen/Arrow_02.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -75px;
+    top: 25px;
+  }
+
+  .service .content .service-right{
+    width: 70%;
+  }
+
+  .service .content .service-right .bg-elemen img{
+    width: 75%;
+    height: 450px;
+    right: 120px;
+    margin-top: 55px;
+  }
+
+  .slider-for {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .slider-nav {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .home .container .content .main-text{
+    height: 520px;
+  }
+
+  .home .container .content .main-text h1{
+    width: 100%;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .home .container .content .main-text h1::after{
+    top: -10px;
+    right: -60px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .home .container .content .main-text h1::before{
+    bottom: -10px;
+    left: -70px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .home .container .content .main-text h1 span::after{
+    bottom: -16px;
+  }
+
+  .home .container .content .main-text p{
+    font-size: 14px;
+    width: 100%;
+    line-height: 20px;
+  }
+
+  .home .container .content .main-text button {
+    padding: 10px 22px;
+    font-size: 16px;
+  }
+
+  .home .content .content-bottom .content-card{
+    flex-wrap: wrap;
+  }
+
+  .home .content .content-bottom .content-card .card.first{
+    width: 40%;
+  }
+  
+  .home .content .content-bottom .content-card .card.second{
+    width: 40%;
+  }
+
+  .home .content .content-bottom .content-card .card.third{
+    padding: 15px;
+    width: 55%;
+  }
+
+  .home .card.third img{
+    width: 70px;
+    margin-left: 20px;
+    margin-top: -5px;
+  }
+
+  .service .content .text-left{
+    width: 100%;
+  }
+
+  .service .content .text-left::before{
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    margin: -25px auto 0 auto;
+  }
+
+  .service .content .text-left h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    width: 90%;
+  }
+
+  .service .content .text-left button{
+    padding: 8px 20px;
+  }
+
+  .service .content .service-right{
+    width: 100%;
+  }
+
+  .slider-for {
+    width: 100%;
+    margin: 0 auto;
+    position: relative; /* Ensure that slider container is relative for absolute positioning */
+  }
+  
+  .slider-nav {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home .container .content .main-text{
+    height: 430px;
+    padding: 40px 30px;
+  }
+
+  .home .container .content .main-text h1{
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .home .container .content .main-text h1::after{
+    top: -15px;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .home .container .content .main-text h1::before{
+    bottom: -15px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .home .container .content .main-text p{
+    font-size: 13px;
+    width: 100%;
+    line-height: 18px;
+    margin: 25px auto;
+  }
+
+  .home .container .content .main-text button {
+    padding: 8px 20px;
+    font-size: 15px;
+  }
+
+  .home .container .content .main-text button::after {
+    right: -20px;
+    top: -13px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .home .container .content .main-text button::before {
+    left: -25px;
+    bottom: -25px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(-5deg);
+  }
+
+  .home .content .content-bottom .content-card .card.first{
+    width: 43%;
+  }
+
+  .home .card.first p{
+    font-size: 12px;
+    line-height: 18px;
+  }
+  
+  .home .content .content-bottom .content-card .card.second{
+    width: 43%;
+  }
+
+  .home .card.second p{
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .home .content .content-bottom .content-card .card.third{
+    padding: 15px;
+    width: 60%;
+  }
+
+  .home .card.third h4{
+    font-size: 20px;
+  }
+
+  .home .card.third p{
+    font-size: 12px;
+    width: 93%;
+  }
+
+  .service .content .text-left::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 170px;
+    background-size: contain;
+    background-image: url('../src/assets/image/elemen/brush2.png');
+    background-repeat: no-repeat;
+    z-index: -1;
+    left: -100px;
+    margin: -20px 0 0 0;
+  }
+
+  .service .content .text-left button{
+    padding: 8px 20px;
+    margin: 35px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home .container .content .main-text{
+    height: 400px;
+    padding: 30px 25px;
+  }
+
+  .home .container .content .main-text h1{
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .home .container .content .main-text h1::after{
+    top: -20px;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .home .container .content .main-text h1::before{
+    bottom: -25px;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .home .container .content .main-text p{
+    font-size: 12px;
+    line-height: 15px;
+    margin: 25px auto;
+  }
+
+  .home .container .content .main-text button {
+    padding: 7px 16px;
+    font-size: 13px;
+  }
+
+  .home .container .content .main-text button::after {
+    right: -15px;
+    top: -10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .home .container .content .main-text button::before {
+    left: -20px;
+    bottom: -20px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(-5deg);
+  }
+
+  .home .card.first img{
+    height: 80px;
+    border-radius: 15px;
+  }
+
+  .home .card.first h4{
+    font-size: 18px;
+    margin: 15px 0 0 0;
+  }
+
+  .home .card.first p{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .home .card.second img{
+    height: 80px;
+    border-radius: 15px;
+  }
+
+  .home .card.second h4{
+    font-size: 18px;
+    margin: 15px 0 0 0;
+  }
+
+  .home .card.second p{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .home .content .content-bottom .content-card .card.third{
+    padding: 15px;
+    width: 65%;
+    height: 240px;
+  }
+
+  .home .card.third h4{
+    font-size: 17px;
+    margin: 5px 0;
+  }
+
+  .home .card.third p{
+    font-size: 12px;
+  }
+
+  .home .card.third img{
+    width: 80px;
+    margin-left: 20px;
+    margin-top: -5px;
+  }
+
+  .service .content .text-left::before{
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    left: -50px;
+    margin: -20px 0 0 0;
+  }
+
+  .service .content .text-left h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+    width: 100%;
+  }
+
+  .service .content .text-left button{
+    font-size: 13px;
+  }
+
+  .service .content .service-right .bg-elemen img{
+    width: 90%;
+    height: 350px;
+    right: 30px;
+    margin-top: 140px;
+  }
+
+  .service .content .service-right .service-card{
+    gap: 10px;
+  }
+
+  .service .content .service-right .service-card .card{
+    width: calc(50% - 5px);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .service .content .service-right .service-card .card h5{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 25px 0 10px 0;
+  }
+  
+  .service .content .service-right .service-card .card p{
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    opacity: 0.8;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .home .container .content .main-text{
+    height: 400px;
+    padding: 20px 15px;
+  }
+
+  .home .container .content .main-text h1{
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .home .container .content .main-text h1::after{
+    top: -20px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .home .container .content .main-text h1::before{
+    bottom: -25px;
+    left: -20px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .home .container .content .main-text p{
+    font-size: 11px;
+    line-height: 14px;
+    margin: 25px auto 20px auto;
+  }
+
+  .home .content .content-bottom .content-card .card.first{
+    width: 85%;
+  }
+
+  .home .card.first img{
+    height: 100px;
+    border-radius: 15px;
+  }
+
+  .home .card.first h4{
+    font-size: 18px;
+    margin: 15px 0 0 0;
+  }
+
+  .home .card.first p{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .home .content .content-bottom .content-card .card.second{
+    width: 85%;
+  }
+
+  .home .card.second img{
+    height: 100px;
+    border-radius: 15px;
+  }
+
+  .home .card.second h4{
+    font-size: 18px;
+    margin: 15px 0 0 0;
+  }
+
+  .home .card.second p{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .home .content .content-bottom .content-card .card.third{
+    width: 85%;
+    height: 250px;
+  }
+
+  .home .card.third h4{
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .home .card.third p{
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .home .card.third img{
+    width: 70px;
+    margin-left: 20px;
+    margin-top: -10px;
+  }
+
+  .service .content .text-left p{
+    font-size: 13px;
+  }
+
+  .service .content .text-left h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #000000;
+    width: 100%;
+  }
+
+  .service .content .text-left button{
+    font-size: 12px;
+    padding: 6px 16px;
+    margin: 20px 0 0 0;
+  }
+
+.service .content .service-right .service-card .card img{
+  width: 40px;
+  background-color: #F2F5FF;
+  padding: 11px;
+  border-radius: 10px;
+}
+
+.service .content .service-right .service-card .card h5{
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.service .content .service-right .service-card .card p{
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  opacity: 0.8;
+  line-height: 13px;
+}
+
+
+}

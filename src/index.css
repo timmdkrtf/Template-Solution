@@ -916,7 +916,7 @@ body{
 
   .home .container .content .main-text button {
     padding: 7px 16px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .home .container .content .main-text button::after {
@@ -1002,7 +1002,7 @@ body{
   }
 
   .service .content .text-left button{
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .service .content .service-right .bg-elemen img{
@@ -1065,7 +1065,7 @@ body{
   }
 
   .home .container .content .main-text p{
-    font-size: 11px;
+    font-size: 12px;
     line-height: 14px;
     margin: 25px auto 20px auto;
   }

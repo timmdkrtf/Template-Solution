@@ -1042,16 +1042,16 @@ body{
 
   .home .container .content .main-text{
     height: 400px;
-    padding: 20px 15px;
+    padding: 25px 10px;
   }
 
   .home .container .content .main-text h1{
-    font-size: 22px;
+    font-size: 24px;
     line-height: 25px;
   }
 
   .home .container .content .main-text h1::after{
-    top: -20px;
+    top: -30px;
     right: -10px;
     width: 30px;
     height: 30px;

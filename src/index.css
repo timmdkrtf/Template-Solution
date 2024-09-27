@@ -57,8 +57,8 @@ body{
 }
 
 /* home */
-.home .container{
-  margin-top: 86px;
+.home{
+  padding-top: 86px;
 }
 
 .home .container .content{
@@ -462,6 +462,11 @@ body{
 .slick-prev:before, .slick-next:before {
   font-size: 20px !important;
   font-weight: 800;
+}
+
+#portfolio .row{
+  padding-top: 110px !important;
+  padding-bottom: 50px !important;
 }
 
 #portfolio .col-12 h2{
